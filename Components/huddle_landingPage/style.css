@@ -84,6 +84,7 @@ header {
 @media (min-width: 1100px) {
   header {
     background: url(images/bg-desktop.svg);
+    padding: 64px 80px;
   }
 
   .header__logo {
@@ -93,7 +94,8 @@ header {
 
   .header__content {
     display: flex;
-    gap: 20px;
+    gap: 40px;
+
   }
 
   .header__content img {
