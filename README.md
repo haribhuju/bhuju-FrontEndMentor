@@ -2,7 +2,7 @@
 
 Live Url: https://bhuju-frontendmentor.netlify.app/
 
-#Components
+# Components
 
 1. Huddle Landing Pages
 Live Url: https://bhuju-frontendmentor.netlify.app/components/huddle_landingpage/
