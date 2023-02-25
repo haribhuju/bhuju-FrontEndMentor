@@ -46,7 +46,7 @@ a{
   display: flex;
   flex-direction: column;
   margin: 20px;
-  width: 500px;
+  width: 550px;
   height: 550px;
   padding: 25px 20px;
   background-color: white;
@@ -93,7 +93,7 @@ a{
 }
 
 .main__content-details__buttons a {
-  padding: 10px 50px;
+  padding: 12px 50px;
   border-radius: 10px;
   border: none;
   background-color: salmon;
