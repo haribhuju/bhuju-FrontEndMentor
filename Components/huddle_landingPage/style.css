@@ -85,6 +85,12 @@ header {
   header {
     background: url(images/bg-desktop.svg);
   }
+
+  .header__logo {
+    width: 200px;
+    height: 32px;
+  }
+
   .header__content {
     display: flex;
     gap: 20px;
