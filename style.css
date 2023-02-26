@@ -3,9 +3,13 @@
   padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .container {
@@ -17,9 +21,10 @@ a{
   display: flex;
   padding: 20px;
   color: salmon;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
+
+
 
 .header__nav-link {
   display: flex;
@@ -35,7 +40,6 @@ a{
 }
 
 .main {
-  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   background-color: salmon;
@@ -44,65 +48,86 @@ a{
 
 .main__content {
   display: flex;
-  flex-direction: column;
-  margin: 20px;
-  width: 550px;
-  height: 550px;
-  padding: 25px 20px;
-  background-color: white;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 15px 10px;
+  background-color: salmon;
   border-radius: 10px;
+ 
 }
 
-.main__content img {
+.main__content-item {
+  display: flex;
+  min-width: 320px;
+  width: 30%;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.main__content-item__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main__content-item__card-image{
+  max-height: 300px;
+}
+
+.main__content-item__card-image img {
   width: 100%;
   height: 100%;
-  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
-.main__content-details__title {
-  font-size: 32px;
+.main__content-item__card-info{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 5px 15px;
+}
+
+.main__content-item__card-info h2{
+  margin: 10px 0;
+}
+
+.main__content-item__card-info__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
   color: salmon;
-  padding: 20px 0 10px 0;
 }
 
-.main__content-details__tags {
-  padding-bottom: 10px;
+.main__content-item__card-info__tags ul {
   display: flex;
   gap: 10px;
 }
 
-.main__content-details__tags span:nth-of-type(1) {
-  font-weight: 600;
-  color: rgb(106, 190, 205);
-}
-
-.main__content-details__tags span:nth-of-type(2) {
-  font-weight: 600;
+.main__content-item__card-info__tags ul li:nth-of-type(odd) {
   color: blueviolet;
 }
 
-.main__content-details__para {
-  font-size: 18px;
-  padding-bottom: 20px;
+.main__content-item__card-info__tags ul li:nth-of-type(even) {
+  color: palevioletred;
 }
 
-.main__content-details__buttons {
+.main__content-item__card-info__para {
+  margin: 10px 0;
+}
+
+.main__content-item__card-info__button {
+  margin-top: auto;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
-  color: salmon;
+
 }
 
-.main__content-details__buttons a {
-  padding: 12px 50px;
-  border-radius: 10px;
-  border: none;
+.main__content-item__card-info__button a {
   background-color: salmon;
-  color: white;
-  font-size: 20px;
-}
-
-a:hover{
-    color: salmon;
-    cursor: pointer;
-    background-color: blanchedalmond;
+  padding: 10px 25px;
+  border-radius: 15px;
 }
