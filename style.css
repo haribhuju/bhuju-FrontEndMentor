@@ -99,6 +99,7 @@ ul {
   font-size: 18px;
   line-height: 22px;
   color: salmon;
+  text-transform: uppercase;
 }
 
 .main__content-item__card-info__tags ul {
@@ -130,4 +131,14 @@ ul {
   background-color: salmon;
   padding: 10px 25px;
   border-radius: 15px;
+}
+
+h2 a:hover{
+  color: rgb(249, 88, 70);
+  text-decoration: underline;
+}
+
+.main__content-item__card-info__button a:hover{
+  background-color: rgb(249, 88, 70);
+  color: black;
 }
