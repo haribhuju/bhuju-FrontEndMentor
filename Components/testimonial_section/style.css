@@ -4,8 +4,18 @@
   margin: 0;
   padding: 0;
 }
-.testimonial {
+
+body {
   background: #ecf2f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial {
+  max-width: 1110px;
+  max-height: 572px;
   display: grid;
   gap: 24px;
   padding: 24px;
@@ -99,4 +109,28 @@
 
 .testimonial__card:nth-of-type(5) {
   background: #19202d;
+}
+
+@media (min-width: 1110px) {
+  .testimonial {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .testimonial__card:nth-of-type(1) {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .testimonial__card:nth-of-type(1) > img {
+    right: 80px;
+  }
+
+  .testimonial__card:nth-of-type(3) {
+    grid-row: span 2;
+  }
+
+  .testimonial__card:nth-of-type(5) {
+    grid-column: span 2;
+  }
 }
