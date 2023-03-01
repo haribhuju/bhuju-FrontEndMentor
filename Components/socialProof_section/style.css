@@ -9,6 +9,9 @@ body {
   font-size: 15px;
   font-family: "League Spartan", sans-serif;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .socialProof {
@@ -107,4 +110,75 @@ body {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.303571px;
+}
+
+@media (min-width: 1110px) {
+  .socialProof {
+    max-width: 1110px;
+  }
+
+  .socialProof__rating {
+    display: flex;
+    text-align: left;
+    gap: 125px;
+  }
+  .socialProof__rating-info {
+    max-width: 445px;
+  }
+
+  .socialProof__rating-info h2 {
+    font-size: 56px;
+    letter-spacing: -2px;
+    line-height: 48px;
+  }
+
+  .socialProof__rating-info p {
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: -0.633333px;
+  }
+
+  .socialProof__rating-lists {
+    max-width: 540px;
+    margin-top: 0px;
+  }
+
+  .socialProof__rating-lists__item {
+    width: 100%;
+    padding: 20px 32px;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .socialProof__rating-lists__item:nth-of-type(1) {
+    align-self: flex-end;
+  }
+
+  .socialProof__rating-lists__item:nth-of-type(2) {
+    align-self: center;
+  }
+
+  .socialProof__rating-lists__item:nth-of-type(3) {
+    align-self: flex-start;
+  }
+
+  .socialProof__cards{
+    margin-top: 71px;
+    flex-direction: row;
+    gap: 30px;
+    height: 266px;
+  }
+
+  .socialProof__cards-item:nth-of-type(1) {
+    align-self:flex-start;
+  }
+
+  .socialProof__cards-item:nth-of-type(2) {
+    align-self: center;
+  }
+
+  .socialProof__cards-item:nth-of-type(3) {
+    align-self: flex-end;
+}
 }
