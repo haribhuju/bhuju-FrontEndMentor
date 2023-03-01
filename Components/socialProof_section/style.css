@@ -12,6 +12,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-image: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
 }
 
 .socialProof {
@@ -113,6 +118,13 @@ body {
 }
 
 @media (min-width: 1110px) {
+  body {
+    background-image: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+  }
+
   .socialProof {
     max-width: 1110px;
   }
@@ -163,7 +175,7 @@ body {
     align-self: flex-start;
   }
 
-  .socialProof__cards{
+  .socialProof__cards {
     margin-top: 71px;
     flex-direction: row;
     gap: 30px;
@@ -171,7 +183,7 @@ body {
   }
 
   .socialProof__cards-item:nth-of-type(1) {
-    align-self:flex-start;
+    align-self: flex-start;
   }
 
   .socialProof__cards-item:nth-of-type(2) {
@@ -180,5 +192,5 @@ body {
 
   .socialProof__cards-item:nth-of-type(3) {
     align-self: flex-end;
-}
+  }
 }
