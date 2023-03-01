@@ -5,7 +5,7 @@ Live Url: https://bhuju-frontendmentor.netlify.app/
 # Components
 
 1. Huddle Landing Pages
-   Live Url: https://bhuju-frontendmentor.netlify.app/components/huddle_landingpage/
+   Live Url: https://bhuju-frontendmentor.netlify.app/components/huddle_landing-page/
 
 2. Result Summary
    Live Url: https://bhuju-frontendmentor.netlify.app/components/results_summary/
@@ -17,7 +17,7 @@ Live Url: https://bhuju-frontendmentor.netlify.app/
    Live Url: https://bhuju-frontendmentor.netlify.app/components/testimonial_section/
 
 5. Four Card Feature Section
-   Live Url: https://bhuju-frontendmentor.netlify.app/components/fourCardFeature_section/
+   Live Url: https://bhuju-frontendmentor.netlify.app/components/four-card-feature_section/
 
 6. Social Proof Section
-   Live Url: https://bhuju-frontendmentor.netlify.app/components/socialproof_section/
+   Live Url: https://bhuju-frontendmentor.netlify.app/components/social-proof_section/
