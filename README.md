@@ -18,3 +18,6 @@ Live Url: https://bhuju-frontendmentor.netlify.app/
 
 5. Four Card Feature Section
    Live Url: https://bhuju-frontendmentor.netlify.app/components/fourCardFeature_section/
+
+6. Social Proof Section
+   Live Url: https://bhuju-frontendmentor.netlify.app/components/socialproof_section/
