@@ -15,3 +15,6 @@ Live Url: https://bhuju-frontendmentor.netlify.app/
 
 4. Testimonial Section
    Live Url: https://bhuju-frontendmentor.netlify.app/components/testimonial_section/
+
+5. Four Card Feature Section
+   Live Url: https://bhuju-frontendmentor.netlify.app/components/fourCardFeature_section/
