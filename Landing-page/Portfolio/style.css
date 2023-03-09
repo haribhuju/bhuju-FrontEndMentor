@@ -131,7 +131,7 @@ a {
   line-height: 2.6rem;
 }
 
-.hero__info-cta {
+.cta {
   color: var(--title);
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -141,7 +141,7 @@ a {
   border-bottom: 2px solid var(--deco);
 }
 
-.hero__info-cta:hover {
+.cta:hover {
   color: var(--deco);
 }
 
@@ -171,6 +171,68 @@ a {
   font-size: 1.6rem;
   line-height: 2.6rem;
   color: var(--para);
+}
+
+.project {
+  margin-top: 8rem;
+}
+
+.project__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project__title h3 {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: var(--title);
+}
+
+.project__card {
+  margin-top: 4rem;
+}
+
+.project__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.project__card-list__item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+.project__card-list__item-img img {
+  max-width: 342px;
+}
+
+.project__card-list__item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.project__card-list__item-info h4 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var(--title);
+  text-transform: uppercase;
+}
+
+.project__card-list__item-info__tags {
+  color: var(--para);
+
+  display: flex;
+  gap: 1.8rem;
+}
+
+.project__card-list__item-btn {
+  display: flex;
+  gap: 1.6rem;
 }
 
 @media (min-width: 768px) {
@@ -267,6 +329,26 @@ a {
     font-size: 1.8rem;
     line-height: 2.8rem;
   }
+
+  .project__title h3 {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+  }
+
+  .project__card {
+    margin-top: 6rem;
+  }
+
+  .project__card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 6rem;
+  }
+
+  .project__card-list__item {
+    flex-basis: 33%;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -275,7 +357,7 @@ a {
       url(images/pattern-circle.svg), url(images/pattern-rings.svg);
     background-repeat: no-repeat;
     background-position: left -28rem top 12rem, right -7rem top 50rem,
-      right -20rem top 113rem;
+      right -20rem top 112rem;
   }
 
   .wrapper {
@@ -313,5 +395,23 @@ a {
 
   .experience__item {
     flex-basis: 29%;
+  }
+
+  .project_-title h3{
+    font-size: 8.8rem;
+    line-height: 8.8rem;
+  }
+
+  .project__card{
+    margin-top: 8rem;
+  }
+
+  .project__card-list {
+    column-gap: 3rem;
+    row-gap: 6.9rem;
+  }
+
+  .project__card-list__item-img img {
+    max-width: 540px;
   }
 }
