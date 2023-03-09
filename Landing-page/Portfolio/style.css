@@ -41,9 +41,10 @@ body {
   background-color: var(--primary-bg);
 
   background-image: url(images/pattern-rings.svg),
-    url(images/pattern-circle.svg);
+    url(images/pattern-circle.svg), url(images/pattern-rings.svg);
   background-repeat: no-repeat;
-  background-position: left -28rem top 12rem, right -7rem top 26rem;
+  background-position: left -28rem top 12rem, right -7rem top 26rem,
+    right -30rem top 128rem;
 }
 
 ul {
@@ -144,12 +145,41 @@ a {
   color: var(--deco);
 }
 
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+
+  text-align: center;
+  margin-top: 8rem;
+
+  padding: 4rem 0;
+
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.experience__item h2 {
+  font-size: 3.2rem;
+  line-height: 40px;
+  letter-spacing: -0.1rem;
+  color: var(--title);
+}
+
+.experience__item p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--para);
+}
+
 @media (min-width: 768px) {
   body {
     background-image: url(images/pattern-rings.svg),
-      url(images/pattern-circle.svg);
+      url(images/pattern-circle.svg), url(images/pattern-rings.svg);
     background-repeat: no-repeat;
-    background-position: left -28rem top 12rem, right -7rem top 47rem;
+    background-position: left -28rem top 12rem, right -7rem top 47rem,
+      right -20rem top 110rem;
   }
   .wrapper {
     max-width: 708px;
@@ -207,14 +237,45 @@ a {
   .hero__img img {
     max-width: 322px;
   }
+
+  .experience {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: center;
+    gap: 5.2rem;
+
+    margin-top: 6rem;
+    padding: 5.2rem 0;
+  }
+
+  .experience__item {
+    flex-basis: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .experience__item h2 {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.15rem;
+  }
+
+  .experience__item p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
 }
 
 @media (min-width: 1440px) {
   body {
     background-image: url(images/pattern-rings.svg),
-      url(images/pattern-circle.svg);
+      url(images/pattern-circle.svg), url(images/pattern-rings.svg);
     background-repeat: no-repeat;
-    background-position: left -28rem top 12rem, right -7rem top 50rem;
+    background-position: left -28rem top 12rem, right -7rem top 50rem,
+      right -20rem top 113rem;
   }
 
   .wrapper {
@@ -242,5 +303,15 @@ a {
 
   .hero__img img {
     max-width: 445px;
+  }
+
+  .experience {
+    margin-top: 21.9rem;
+    padding: 7.2rem;
+    gap: 5.8rem;
+  }
+
+  .experience__item {
+    flex-basis: 29%;
   }
 }
