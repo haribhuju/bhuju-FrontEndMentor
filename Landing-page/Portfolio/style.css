@@ -70,7 +70,7 @@ a {
 }
 
 .header__logo,
-.footer__logo {
+.footer__logo a {
   font-size: var(--fs-h-m);
   line-height: var(--lh-h-m);
   color: var(--title);
@@ -103,7 +103,7 @@ a {
 }
 
 .hero__img img {
-  max-width: 174px;
+  max-width: 190px;
 }
 
 .hero__info {
