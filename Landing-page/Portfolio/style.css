@@ -60,7 +60,8 @@ a {
   margin-inline: auto;
 }
 
-.header {
+.header,
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,19 +69,22 @@ a {
   margin-top: 2rem;
 }
 
-.header__logo {
+.header__logo,
+.footer__logo {
   font-size: var(--fs-h-m);
   line-height: var(--lh-h-m);
   color: var(--title);
   font-weight: 700;
 }
 
-.header__social-list {
+.header__social-list,
+.footer__social-list {
   display: flex;
   gap: 2.5rem;
 }
 
-.header__social-list__item:hover img {
+.header__social-list__item:hover img,
+.footer__social-list__item:hover img {
   cursor: pointer;
 }
 
@@ -235,11 +239,71 @@ a {
   gap: 1.6rem;
 }
 
+.contact {
+  background-color: var(--secondary-bg);
+  margin-top: 8rem;
+  padding: 6rem 0;
+
+  background-image: url(images/pattern-rings.svg);
+  background-repeat: no-repeat;
+  background-position: left -30rem top 51rem;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  text-align: center;
+}
+
+.contact__info h2 {
+  color: var(--title);
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.contact__info p {
+  color: var(--para);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 3.2rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  background-color: transparent;
+  color: var(--para);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--title);
+  padding-bottom: 1.6rem;
+}
+
+.contact__form .cta {
+  align-self: flex-end;
+}
+
+.footer {
+  margin-top: 8rem;
+  border-top: 2px solid var(--title);
+  padding: 3.9rem 0 1rem;
+}
+
+.footer__social-list__item a img:hover {
+  filter: invert(77%) sepia(99%) saturate(317%) hue-rotate(80deg)
+    brightness(300%) contrast(90%);
+}
+
 @media (min-width: 768px) {
   body {
-    background-image: url(images/pattern-rings.svg),
-      url(images/pattern-circle.svg), url(images/pattern-rings.svg);
-    background-repeat: no-repeat;
     background-position: left -28rem top 12rem, right -7rem top 47rem,
       right -20rem top 110rem;
   }
@@ -247,13 +311,15 @@ a {
     max-width: 708px;
     position: relative;
   }
-  .header {
+  .header,
+  .footer {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2.9rem;
   }
 
-  .header__logo {
+  .header__logo,
+  .footer__logo {
     font-size: 3.2rem;
   }
 
@@ -349,13 +415,28 @@ a {
   .project__card-list__item {
     flex-basis: 33%;
   }
+
+  .contact {
+    background-position: left -30rem top 52rem;
+  }
+
+  .contact__info h2 {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+  }
+
+  .contact__info p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .footer {
+    margin-top: 9.2rem;
+  }
 }
 
 @media (min-width: 1440px) {
   body {
-    background-image: url(images/pattern-rings.svg),
-      url(images/pattern-circle.svg), url(images/pattern-rings.svg);
-    background-repeat: no-repeat;
     background-position: left -28rem top 12rem, right -7rem top 50rem,
       right -20rem top 112rem;
   }
@@ -397,12 +478,12 @@ a {
     flex-basis: 29%;
   }
 
-  .project_-title h3{
+  .project_-title h3 {
     font-size: 8.8rem;
     line-height: 8.8rem;
   }
 
-  .project__card{
+  .project__card {
     margin-top: 8rem;
   }
 
@@ -413,5 +494,24 @@ a {
 
   .project__card-list__item-img img {
     max-width: 540px;
+  }
+
+  .contact {
+    background-position: left -26rem top 34rem;
+  }
+
+  .contact__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__info {
+    max-width: 445px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contact__form {
+    min-width: 445px;
   }
 }
