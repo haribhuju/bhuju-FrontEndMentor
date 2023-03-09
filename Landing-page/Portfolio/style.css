@@ -35,4 +35,50 @@
 body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 10px;
+  background-color: var(--primary-bg);
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.header__logo {
+  font-size: var(--fs-h-m);
+  line-height: var(--lh-h-m);
+  color: var(--title);
+  font-weight: 700;
+}
+
+.header__social-list {
+  display: flex;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 708px;
+    margin-inline: auto;
+  }
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__logo{
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width:1440px){
+  .wrapper{
+    max-width: 1110px;
+  }
 }
